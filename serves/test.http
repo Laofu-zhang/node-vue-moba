@@ -1,0 +1,19 @@
+@url = http://localhost:4000/admin/api
+###
+GET {{url}}/categoriesQuery
+
+###添加分类
+POST {{url}}/categories
+Content-Type: application/json
+
+{
+    "title": "news"
+}
+
+### 删除分类
+DELETE {{url}}/categoriesDelete
+Content-Type: application/json
+
+{
+    "title": "123"
+}
